@@ -39,8 +39,6 @@ int main(int argc, char *argv[]) {
             while (1){
                 tmp_pid=getpgid(pid);
 
-                sleep(1);
-
                 if((tmp_pid != -1) && (tmp_pid == pgid)){
                     ////마피아 pid 계산
                     if(found_count>0){
